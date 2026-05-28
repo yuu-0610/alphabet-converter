@@ -22,8 +22,7 @@ std::string InputText() {
 
         // 空文字チェック
         if (text.empty()) {
-            std::cout << "エラー: 文字を入力してください"
-                      << std::endl;
+            std::cout << "エラー: 文字を入力してください" << std::endl;
             isValid = false;
             continue;
         }
@@ -37,8 +36,7 @@ std::string InputText() {
 
             // A～Z以外をチェック
             if (c < 'A' || c > 'Z') {
-                std::cout << "エラー: A～Z の文字のみ入力してください"
-                          << std::endl;
+                std::cout << "エラー: A～Z の文字のみ入力してください" << std::endl;
                 isValid = false;
                 break;
             }
