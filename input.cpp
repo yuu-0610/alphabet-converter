@@ -35,7 +35,7 @@ std::string InputText() {
             c = std::toupper(c);
 
             // A～Z以外をチェック
-            if (c < 'A' || c > 'Z') {
+            if ((c < 'A') || (c > 'Z')) {
                 std::cout << "エラー: A～Z の文字のみ入力してください" << std::endl;
                 isValid = false;
                 break;

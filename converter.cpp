@@ -20,7 +20,7 @@ void ConvertText(const std::string& text) {
         // 大文字へ変換
         int32_t upperChar{std::toupper(text[i])};
 
-        if (upperChar >= 'A' && upperChar <= 'Z') {
+        if ((upperChar >= 'A') && (upperChar <= 'Z')) {
 
             // A=1 ～ Z=26
             int32_t number{upperChar - 'A' + 1};
